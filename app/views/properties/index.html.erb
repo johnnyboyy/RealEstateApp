@@ -1,1 +1,14 @@
-<h2>Hello!</h2>
+<h1> Properties </h1>
+
+<% @properties.each do |prop| %>
+
+<div>Name: <%= prop.name %></div>
+<br />
+<div>Address: <%= prop.address %></div>
+<br />
+<div>Price: <%= prop.format_price %></div>
+
+
+<% end %>
+
+<%= link_to 'New Property', new_property_path %>
