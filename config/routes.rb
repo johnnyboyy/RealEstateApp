@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   root 'properties#index'
   resources :properties
+  resources :users, only: [:show]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
